@@ -1,11 +1,11 @@
 // （API_KEY には、"取得したAPIキー" を記述）
-const API_KEY = "93e363934c16dcc8e300f0a65042ddad";
+const API_KEY = "";
 
 $(function(){
   $('#btn').on('click', function() {
   // 入力された都市名でWebAPIに天気情報をリクエスト
     $.ajax({
-      url: "https://api.openweathermap.org/data/2.5/weather?q=" + $('#cityname').val() + "&units=metric&appid=" + "93e363934c16dcc8e300f0a65042ddad",
+      url: "https://api.openweathermap.org/data/2.5/weather?q=" + $('#cityname').val() + "&units=metric&appid=" + "",
       dataType : 'jsonp',
     }).done(function (data){
       //通信成功
